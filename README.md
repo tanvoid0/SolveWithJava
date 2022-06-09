@@ -1,10 +1,12 @@
-# Array
+# A quick Handbook for algorithms
 
-## Duplicate Item
+## Array
+
+### Duplicate Item
 
 **HashSet Hack**
 
-## [Maximum Sub Array](https://leetcode.com/problems/maximum-subarray)
+### [Maximum Sub Array](https://leetcode.com/problems/maximum-subarray)
 
 ### Bruteforce
 
@@ -44,9 +46,9 @@ while min<=max
 return -1
 ```
 
-# Sort
+## Sort
 
-## Bubble sort
+### Bubble sort
 
 ```
     loop 0 ... n-2

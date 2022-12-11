@@ -1,0 +1,26 @@
+=== Create Delivery Confirmation Weekly Record with Daily Records
+Create Delivery Confirmation Weekly Record with it's child Daily Records and return the created object.
+
+[[delivery-confirmation-record-fields]]
+.Response Fields
+include::{snippets}/delivery-confirmation-record/add-weekly-with-daily-record/response-fields.adoc[]
+
+==== Sample Request
+include::{snippets}/delivery-confirmation-record/add-weekly-with-daily-record/http-request.adoc[]
+
+==== Sample Response
+include::{snippets}/delivery-confirmation-record/add-weekly-with-daily-record/http-response.adoc[]
+
+==== CURL Sample
+include::{snippets}/delivery-confirmation-record/add-weekly-with-daily-record/curl-request.adoc[]
+
+==== Error Responses
+
+===== Access Denied
+If the user is not authorised to perform the operation then a 403 response will be returned with
+a JSON payload containing additional error information, as described in <<error-responses,Error Responses>>.
+
+For example: 
+include::{snippets}/delivery-confirmation-record/add-weekly-with-daily-record/forbidden/http-response.adoc[]
+
+

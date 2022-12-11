@@ -8,7 +8,7 @@ class App {
     int[] nums = {1,2,3,4,5};
     Node head = null;
     CustomLinkedList list = new CustomLinkedList();
-    list.insertArray(head, nums);
+//    list.insertArray(head, nums);
     list.removeNthFromEnd(head, 2);
     list.display();
   }
@@ -29,14 +29,14 @@ class CustomLinkedList {
     }
   }
 
-  public void insertArray(Node head, int[] nums) {
-    Node current = new Node();
-    for(int i=0; i<nums.length; i++) {
-      Node temp = new Node(nums[i]);
-      current.setNext(temp);
-      current = current.getNext();
-    }
-  }
+//  public void insertArray(Node head, int[] nums) {
+//    Node current = new Node();
+//    for(int i=0; i<nums.length; i++) {
+//      Node temp = new Node(nums[i]);
+//      current.setNext(temp);
+//      current = current.getNext();
+//    }
+//  }
 
   public void insertAt(int index, int data) {
     Node nodeToBeInserted = new Node(data);

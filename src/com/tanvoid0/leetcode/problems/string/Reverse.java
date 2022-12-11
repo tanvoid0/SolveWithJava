@@ -1,5 +1,10 @@
 package com.tanvoid0.leetcode.problems.string;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Reverse {
 
   public static void main(String[] args) {
@@ -21,5 +26,9 @@ public class Reverse {
       str[i] = new StringBuilder(str[i]).reverse().toString();
     }
     s = String.join(" ", str);
+  }
+
+  public static String cleanReverseWords(String s) {
+    return Stream.of(s.split(" ")).map(i -> new StringBuilder(i).reverse().toString()).collect(Collectors.joining(" "));
   }
 }
